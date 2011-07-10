@@ -18,7 +18,8 @@
 #include <arpa/inet.h>
 #include <sys/wait.h>
 #include <signal.h>
-#include "net/LocalIpAddress.h"
+#include "net/LocalIpAddress.hpp"
+#include "loffice/doccontrol/ppt/PPTController.hpp"
 
 
 
@@ -41,8 +42,19 @@ void *get_in_addr(struct sockaddr *sa)
 
     return &(((struct sockaddr_in6*)sa)->sin6_addr);
 }
+
+
 int main(int argc, char *argv[])
 {
+
+
+	PPTController * loffice_pptcontroller;
+
+	loffice_pptcontroller->connect();
+	loffice_pptcontroller->openDoc();
+	loffice_pptcontroller->accessDoc();
+
+
 
 	LocalIpAddress * ip_address;
 

@@ -10,6 +10,7 @@ RM := rm -rf
 -include sources.mk
 -include subdir.mk
 -include src/net/subdir.mk
+-include src/loffice/doccontrol/ppt/subdir.mk
 -include src/subdir.mk
 -include objects.mk
 
@@ -39,19 +40,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: PPTSocket
+all: iPPT
 
 # Tool invocations
-PPTSocket: $(OBJS) $(USER_OBJS)
+iPPT: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"/usr/lib/libreoffice/basis3.3/sdk/lib" -L"/usr/lib/libreoffice/basis3.3/ure-link/lib" -o"PPTSocket" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"/usr/lib/libreoffice/basis3.3/ure-link/lib" -L"/usr/lib/libreoffice/basis3.3/sdk/lib" -o"iPPT" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C++_DEPS)$(C_DEPS)$(CC_DEPS)$(CPP_DEPS)$(EXECUTABLES)$(CXX_DEPS)$(C_UPPER_DEPS) PPTSocket
+	-$(RM) $(OBJS)$(C++_DEPS)$(C_DEPS)$(CC_DEPS)$(CPP_DEPS)$(EXECUTABLES)$(CXX_DEPS)$(C_UPPER_DEPS) iPPT
 	-@echo ' '
 
 .PHONY: all clean dependents
