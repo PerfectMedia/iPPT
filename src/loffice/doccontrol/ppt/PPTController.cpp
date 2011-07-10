@@ -199,40 +199,9 @@ void PPTController::accessDoc()
 			if(icounter == 2)rDrawView->setCurrentPage(drawpage);
 
 	}
-
-
-
-	// Playing around with the inserted page...
-	//namecontainer->setName(OUString::createFromAscii("My second page"));
-
-
-
-	//ChangeTitle(oDoc);
-
-
-
-
-	/*//create xSheetDocument
-	Reference<XSpreadsheetDocument> xSheetDocument_local (xComponent,UNO_QUERY);
-
-	xSheetDocument  = xSheetDocument_local;
-
-	//create an instance of XSpreadsheets, which is a worksheets collection
-	Reference<XSpreadsheets> xSheets=xSheetDocument->getSheets();
-
-	//create a class to interact with single worksheets;
-
-	//the single worksheets are referenced by an XIndexAccess interface
-	Reference<XIndexAccess> xIndex (xSheets,UNO_QUERY);
-
-	//take the first worksheet (index=0)...
-	Any any=xIndex->getByIndex(0);
-
-	//finally, assign the first worksheet to xSheet
-	any >>= xSheet;*/
 }
 
-void PPTController::modifyDoc()
+void PPTController::moveToNext()
 {
 	//create an XCellRange interface to interact with cells ranges
 	Reference<XCellRange> xCellRange(xSheet,UNO_QUERY);

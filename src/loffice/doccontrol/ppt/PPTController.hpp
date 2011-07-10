@@ -64,7 +64,7 @@ public:
 	void connect();
 	void openDoc();
 	void accessDoc();
-	void modifyDoc();
+	void moveToNext();
 	void printDoc();
 	void disconnect();
 
