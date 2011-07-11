@@ -28,6 +28,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
+#include <time.h>
 #include <unistd.h>
 #include <errno.h>
 #include <string.h>
@@ -40,14 +42,11 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 #include <signal.h>
 #include "net/LocalIpAddress.hpp"
 #include "loffice/doccontrol/ppt/PPTController.hpp"
-
-
-
 using namespace std;
 
 
 #define BACKLOG 10
-
+#define MAXDATASIZE 100
 
 void sigchld_handler(int s)
 {
@@ -67,6 +66,11 @@ void *get_in_addr(struct sockaddr *sa)
 int main(int argc, char *argv[])
 {
 
+	system("soffice -invisible \"-accept=socket,host=localhost,port=8100;urp;StarOffice.ServiceManager\"");
+
+	cout << "Se esta iniciando el servidor Office..." << endl;
+
+	sleep(3);
 
 	PPTController * loffice_pptcontroller;
 
@@ -85,13 +89,17 @@ int main(int argc, char *argv[])
 	struct sigaction sa;
 	socklen_t sin_size;
     char s[INET6_ADDRSTRLEN];
+    int numbytes;
+	char buf[MAXDATASIZE];
 
 	memset(&hints, 0, sizeof hints);
 	hints.ai_family = AF_UNSPEC;
 	hints.ai_socktype = SOCK_STREAM;
 	hints.ai_flags = AI_PASSIVE;
 
-	cout << "Escuchando en  :  " << ip_address->getIp() << endl;
+	cout << "Escuchando conexiones en :  " << endl;
+	cout << "Ip: " << ip_address->getIp() << endl;
+	cout << "Puerto : 9192" << endl;
 
 	if ((status = getaddrinfo(ip_address->getIp().c_str(), "9192", &hints, &servinfo)) != 0)
 	{
@@ -140,9 +148,6 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 
-
-
-	cout << sockfd << endl;
 	 while(1)
 	 {
 		sin_size = sizeof their_addr;
@@ -156,8 +161,32 @@ int main(int argc, char *argv[])
 			get_in_addr((struct sockaddr *)&their_addr),
 			s, sizeof s);
 
-		cout << "ok" << endl;
 		printf("server: got connection from %s\n", s);
+
+		cout << "ok " << endl;
+
+		while ((numbytes = recv(new_fd, buf, MAXDATASIZE-1, 0)) > -1)
+		{
+			//perror("recv");
+			//exit(1);
+			buf[numbytes] = '\0';
+
+			printf("client: received '%s'\n",buf);
+
+			string command = string(buf);
+
+			if (command.compare("next") == 0 )
+			{
+				cout << "ejecuta next command : " << endl;
+				loffice_pptcontroller->moveToNext();
+			}
+			if (command.compare("prev") == 0 )
+			{
+				cout << "ejecuta prev command : " << endl;
+				loffice_pptcontroller->moveToPrev();
+			}
+		}
+
 
 	}
 

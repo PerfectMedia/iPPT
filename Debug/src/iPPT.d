@@ -128,18 +128,18 @@ src/iPPT.d src/iPPT.o: ../src/iPPT.cpp ../src/net/LocalIpAddress.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/IndexOutOfBoundsException.hdl \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XIndexAccess.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/IndexOutOfBoundsException.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/bridge/XUnoUrlResolver.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/bridge/XUnoUrlResolver.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/ConnectionSetupException.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/IllegalArgumentException.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/NoConnectException.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/ConnectionSetupException.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/IllegalArgumentException.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/NoConnectException.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/frame/XComponentLoader.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/frame/XComponentLoader.hdl \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/io/IOException.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/IllegalArgumentException.hdl \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/io/IOException.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/IllegalArgumentException.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/bridge/XUnoUrlResolver.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/bridge/XUnoUrlResolver.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/ConnectionSetupException.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/NoConnectException.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/ConnectionSetupException.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/NoConnectException.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/XPropertySet.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/XPropertySet.hdl \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/PropertyVetoException.hdl \
@@ -156,18 +156,6 @@ src/iPPT.d src/iPPT.o: ../src/iPPT.cpp ../src/net/LocalIpAddress.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/PropertyChangeEvent.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/XPropertyChangeListener.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/XPropertyChangeListener.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSpreadsheetDocument.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSpreadsheetDocument.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSpreadsheets.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSpreadsheets.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNameContainer.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/ElementExistException.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNameReplace.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNameAccess.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNameContainer.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/ElementExistException.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNameReplace.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNameAccess.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPagesSupplier.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPagesSupplier.hdl \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPages.hpp \
@@ -194,22 +182,6 @@ src/iPPT.d src/iPPT.o: ../src/iPPT.cpp ../src/net/LocalIpAddress.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/ArrayIndexOutOfBoundsException.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNamed.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNamed.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSpreadsheet.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSpreadsheet.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSheetCellRange.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/table/XCellRange.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSheetCellCursor.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSheetCellCursor.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSheetCellRange.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/table/XCellRange.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/table/XCell.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/table/XCell.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/table/CellContentType.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/table/CellContentType.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/view/XPrintable.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/view/XPrintable.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/view/PaperOrientation.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/view/PaperOrientation.hdl \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/registry/XSimpleRegistry.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/registry/XSimpleRegistry.hdl \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/registry/MergeConflictException.hdl \
@@ -489,29 +461,29 @@ src/iPPT.d src/iPPT.o: ../src/iPPT.cpp ../src/net/LocalIpAddress.hpp \
 
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/IndexOutOfBoundsException.hpp:
 
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/bridge/XUnoUrlResolver.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/bridge/XUnoUrlResolver.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/ConnectionSetupException.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/IllegalArgumentException.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/NoConnectException.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/ConnectionSetupException.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/IllegalArgumentException.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/NoConnectException.hpp:
-
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/frame/XComponentLoader.hpp:
 
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/frame/XComponentLoader.hdl:
 
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/io/IOException.hdl:
 
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/IllegalArgumentException.hdl:
+
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/io/IOException.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/IllegalArgumentException.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/bridge/XUnoUrlResolver.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/bridge/XUnoUrlResolver.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/ConnectionSetupException.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/NoConnectException.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/ConnectionSetupException.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/connection/NoConnectException.hpp:
 
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/XPropertySet.hpp:
 
@@ -544,30 +516,6 @@ src/iPPT.d src/iPPT.o: ../src/iPPT.cpp ../src/net/LocalIpAddress.hpp \
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/XPropertyChangeListener.hpp:
 
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/XPropertyChangeListener.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSpreadsheetDocument.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSpreadsheetDocument.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSpreadsheets.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSpreadsheets.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNameContainer.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/ElementExistException.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNameReplace.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNameAccess.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNameContainer.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/ElementExistException.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNameReplace.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNameAccess.hpp:
 
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPagesSupplier.hpp:
 
@@ -620,38 +568,6 @@ src/iPPT.d src/iPPT.o: ../src/iPPT.cpp ../src/net/LocalIpAddress.hpp \
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNamed.hpp:
 
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XNamed.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSpreadsheet.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSpreadsheet.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSheetCellRange.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/table/XCellRange.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSheetCellCursor.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSheetCellCursor.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/sheet/XSheetCellRange.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/table/XCellRange.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/table/XCell.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/table/XCell.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/table/CellContentType.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/table/CellContentType.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/view/XPrintable.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/view/XPrintable.hdl:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/view/PaperOrientation.hpp:
-
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/view/PaperOrientation.hdl:
 
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/registry/XSimpleRegistry.hpp:
 

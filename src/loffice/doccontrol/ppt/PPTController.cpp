@@ -7,14 +7,18 @@
 
 #include "PPTController.hpp"
 
+
+
 Reference<XInterface> xInterface;
 Reference<XComponentContext> xComponentContext;
-OUString sService;
 Reference<XComponent> xComponent;
 Reference<XComponentLoader>xComponentLoader;
-Reference<XSpreadsheet> xSheet;
-Reference<XSpreadsheetDocument> xSheetDocument;
 Reference<XMultiComponentFactory> xMultiComponentFactoryClient;
+Reference< XDrawPages > drawpages;
+Reference< XDrawView > drawview;
+OUString sService;
+
+int current_page = 0;
 
 PPTController::PPTController()
 {
@@ -39,17 +43,16 @@ void PPTController::connect()
 	Reference< XSimpleRegistry > xSimpleRegistry(
 	        createSimpleRegistry() );
 
-	char buffer[512];
 
 	string registry = getCurrentDir()+"/src/iPPT.rdb";
 
-	cout << registry << endl;
 
 	// ... and connect it to the registry file: iPPT.rdb, current directory
 	OUString sRdbFile=OUString::createFromAscii(registry.c_str());
 	try
 	{
 		xSimpleRegistry->open(sRdbFile,sal_True,sal_False);
+		cout << registry << endl;
 	}
 	catch (InvalidRegistryException e)
 	{
@@ -57,11 +60,18 @@ void PPTController::connect()
 		 printf( "An error occurred: %s\n", o.pData->buffer );
 	}
 
-
-
 	//open an  XComponentContext based on the registry file in
 	// xSimpleRegistry
-	xComponentContext = bootstrap_InitialComponentContext(xSimpleRegistry);
+	try
+	{
+		xComponentContext = bootstrap_InitialComponentContext(xSimpleRegistry);
+	}
+	catch(Exception e)
+	{
+		cout << "error "<< endl;
+		OString o = OUStringToOString( e.Message, RTL_TEXTENCODING_ASCII_US );
+		printf( "An error occurred: %s\n", o.pData->buffer );
+	}
 
 	//build the client-side service factory
 	xMultiComponentFactoryClient = (xComponentContext->getServiceManager());
@@ -132,6 +142,7 @@ void PPTController::openDoc()
 	//set the document type
 	OUString sType=OUString::createFromAscii("_blank");
 
+
 	try
 	{
 		//try to open the document
@@ -147,18 +158,6 @@ void PPTController::openDoc()
 
 }
 
-void ChangeTitle(const Reference< XDrawPagesSupplier > oDoc)
-{
-        Reference< ::com::sun::star::document::XDocumentInfoSupplier> infosupplier( oDoc, UNO_QUERY );
-        Reference< ::com::sun::star::document::XDocumentInfo> docinfo = infosupplier->getDocumentInfo();
-        Reference< XPropertySet > DocInfoProps(docinfo, UNO_QUERY );
-        Any mTitle;
-        mTitle = makeAny(OUString::createFromAscii("First attempt"));  //another method to create a PropertyValue with makeAny()
-        Any *test_pointer = &mTitle; // testing
-        DocInfoProps->setPropertyValue( OUString::createFromAscii("My new Title"), *test_pointer );
-}
-
-
 void PPTController::accessDoc()
 {
 
@@ -166,7 +165,7 @@ void PPTController::accessDoc()
 
 	Reference< XDrawPagesSupplier > oDoc(xComponent, UNO_QUERY);
 
-	Reference< XDrawPages > drawpages = oDoc->getDrawPages();
+	drawpages = oDoc->getDrawPages();
 	Reference< ::com::sun::star::container::XIndexAccess > pagecount(drawpages, UNO_QUERY); // for index access and counting usage
 
 	// insert a new drawpage -- identifier: newDrawPage
@@ -184,8 +183,10 @@ void PPTController::accessDoc()
 
 	// Query the XDrawView interface
 		Reference< XDrawView > rDrawView(ctl, UNO_QUERY);
+		drawview = rDrawView;
 
-	//Loop through all pages and give Pagenumber+Pagename to each of them
+	//***************TEST PAGES*************/
+	/*//Loop through all pages and give Pagenumber+Pagename to each of them
 	for (int icounter = 0; icounter < pagecount->getCount(); icounter++)
 	{
 			Any mPage = pagecount->getByIndex(icounter);
@@ -198,63 +199,38 @@ void PPTController::accessDoc()
 
 			if(icounter == 2)rDrawView->setCurrentPage(drawpage);
 
-	}
+	}*/
 }
 
 void PPTController::moveToNext()
 {
-	//create an XCellRange interface to interact with cells ranges
-	Reference<XCellRange> xCellRange(xSheet,UNO_QUERY);
+	Reference< ::com::sun::star::container::XIndexAccess > pagecount(drawpages, UNO_QUERY);
 
-	//create an XCell interface to interact with single cells
-	Reference<XCell> xCell;
+	cout << "Pagina actual " << current_page << endl;
 
-	//take the cell located in column 5, row 6
-	int column=5;
-	int row=6;
-	xCell=xCellRange->getCellByPosition(column,row);
+	if(current_page < pagecount->getCount())
+	{
+		current_page++;
+		Any mPage = pagecount->getByIndex(current_page);
+		Reference< XDrawPage > drawpage(mPage, UNO_QUERY);
 
-	//write a number in the cell
-	xCell->setValue(1960);
-
-	//change cell
-	column=6;
-	row=5;
-	xCell=xCellRange->getCellByPosition(column,row);
-
-	//write a string in the cell
-	OUString sString = OUString::createFromAscii("stringa");
-
-	xCell->setFormula(sString);
+		drawview->setCurrentPage(drawpage);
+	}
 }
-void PPTController::printDoc()
+void PPTController::moveToPrev()
 {
-	//open an XPrintable interface, linked to xSheetDocument
-	Reference<XPrintable> xPrintable(xSheetDocument,UNO_QUERY);
+	Reference< ::com::sun::star::container::XIndexAccess > pagecount(drawpages, UNO_QUERY);
 
-	//load the printer setting
-	Sequence<PropertyValue> pPrinter=xPrintable->getPrinter();
+	cout << "Pagina actual " << current_page << endl;
 
-	//try to modify the PaperOrientation property
-	OUString orient=OUString::createFromAscii("PaperOrientation");
-	int k=0;
-	//check the names until PaperOrientation
-	do
-	  {
-	  if(orient.compareTo(pPrinter[k].Name)==0)
-	    {
-	    pPrinter[k].Value <<= PaperOrientation_LANDSCAPE;
-	    }
-	    k++;
-	  }
-	while(orient.compareTo(pPrinter[k].Name)!=0);
+	if(current_page > 0)
+	{
+		current_page--;
+		Any mPage = pagecount->getByIndex(current_page);
+		Reference< XDrawPage > drawpage(mPage, UNO_QUERY);
 
-
-	//assign properties to the printer
-	xPrintable->setPrinter(pPrinter);
-
-	//print
-	xPrintable->print(pPrinter);
+		drawview->setCurrentPage(drawpage);
+	}
 }
 
 void PPTController::disconnect()
@@ -276,4 +252,14 @@ void PPTController::disconnect()
 	//delete the client-side service factory
 	Reference<XComponent>
 	::query(xMultiComponentFactoryClient)->dispose();
+}
+
+
+int PPTController::currentPage()
+{
+	return current_page;
+}
+void PPTController::setCurrentPage(int page)
+{
+	current_page = page;
 }
