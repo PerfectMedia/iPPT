@@ -1,9 +1,31 @@
-/*
- * PPTController.cpp
- *
- *  Created on: Jul 9, 2011
- *      Author: mordonez
- */
+/*Copyright (c) 2011 PerfectMedia SAC
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
+//============================================================================
+// Name        : PPTController.cpp
+// Author      : Marco Ordonez
+// Version     : 1.0
+// Copyright   : PerfectMedia SAC 2011
+// Description : OpenOffice class to control Impress documents
+//============================================================================
+
 
 #include "PPTController.hpp"
 
@@ -17,12 +39,16 @@ Reference<XMultiComponentFactory> xMultiComponentFactoryClient;
 Reference< XDrawPages > drawpages;
 Reference< XDrawView > drawview;
 OUString sService;
+Reference<XPresentation2> xpresentation;
+Reference<XSlideShowController> xslide_show_controller;
 
 int current_page = 0;
+bool is_fullsreen = false;
 
 PPTController::PPTController()
 {
 	cout << "PPTController" << endl;
+	is_fullsreen = false;
 }
 
 //REEMPLAZAR POR boost para hacerlo cross platform
@@ -162,7 +188,6 @@ void PPTController::accessDoc()
 {
 
 
-
 	Reference< XDrawPagesSupplier > oDoc(xComponent, UNO_QUERY);
 
 	drawpages = oDoc->getDrawPages();
@@ -185,37 +210,73 @@ void PPTController::accessDoc()
 		Reference< XDrawView > rDrawView(ctl, UNO_QUERY);
 		drawview = rDrawView;
 
-	//***************TEST PAGES*************/
-	/*//Loop through all pages and give Pagenumber+Pagename to each of them
-	for (int icounter = 0; icounter < pagecount->getCount(); icounter++)
-	{
-			Any mPage = pagecount->getByIndex(icounter);
-			Reference< XDrawPage > drawpage(mPage, UNO_QUERY);
-			Reference< ::com::sun::star::container::XNamed > names(drawpage, UNO_QUERY);
-			OUString pagename = names->getName();
-			OString sName = OUStringToOString( pagename , RTL_TEXTENCODING_ASCII_US );
-			printf("\n Page Number %d has the name %s", icounter, sName.getStr());
 
+		Reference<XPresentationSupplier> xPS (
+				rmodel, UNO_QUERY_THROW);
+		Reference<XPresentation2> xP (
+			xPS->getPresentation(), UNO_QUERY_THROW);
+		Reference<XSlideShowController> xSSC (
+			xP->getController());
 
-			if(icounter == 2)rDrawView->setCurrentPage(drawpage);
+		xpresentation = xP;
+		xslide_show_controller = xSSC;
 
-	}*/
 }
 
-void PPTController::moveToNext()
+void PPTController::toggleFullScreen()
 {
-	Reference< ::com::sun::star::container::XIndexAccess > pagecount(drawpages, UNO_QUERY);
-
-	cout << "Pagina actual " << current_page << endl;
-
-	if(current_page < pagecount->getCount())
+	if(!is_fullsreen)
 	{
-		current_page++;
+		xpresentation->start();
+		is_fullsreen = true;
+	}
+	else
+	{
+		xpresentation->end();
+		is_fullsreen = false;
+
+		Reference< ::com::sun::star::container::XIndexAccess > pagecount(drawpages, UNO_QUERY);
 		Any mPage = pagecount->getByIndex(current_page);
 		Reference< XDrawPage > drawpage(mPage, UNO_QUERY);
 
 		drawview->setCurrentPage(drawpage);
 	}
+}
+void PPTController::moveToNext()
+{
+
+	//xpresentation->start();
+	cout << "Pagina actual " << current_page << endl;
+
+	Reference< ::com::sun::star::container::XIndexAccess > pagecount(drawpages, UNO_QUERY);
+
+
+	cout << "Slideshow is Running " << is_fullsreen << endl;
+
+	if(current_page < pagecount->getCount()-1)
+	{
+		current_page++;
+	}
+	else
+	{
+		current_page = 0;
+	}
+
+	if(is_fullsreen)
+	{
+		xpresentation->getController()->gotoSlideIndex(current_page);
+	}
+	else
+	{
+
+		Any mPage = pagecount->getByIndex(current_page);
+		Reference< XDrawPage > drawpage(mPage, UNO_QUERY);
+
+		drawview->setCurrentPage(drawpage);
+	}
+
+
+
 }
 void PPTController::moveToPrev()
 {
@@ -223,13 +284,27 @@ void PPTController::moveToPrev()
 
 	cout << "Pagina actual " << current_page << endl;
 
+
 	if(current_page > 0)
 	{
 		current_page--;
+	}
+	else
+	{
+		current_page =  pagecount->getCount()-1;
+	}
+
+	if(is_fullsreen)
+	{
+		xpresentation->getController()->gotoSlideIndex(current_page);
+	}
+	else
+	{
 		Any mPage = pagecount->getByIndex(current_page);
 		Reference< XDrawPage > drawpage(mPage, UNO_QUERY);
 
 		drawview->setCurrentPage(drawpage);
+		//xslide_show_controller->gotoPreviousSlide();
 	}
 }
 

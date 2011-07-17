@@ -1,9 +1,30 @@
-/*
- * PPTController.hpp
- *
- *  Created on: Jul 9, 2011
- *      Author: mordonez
- */
+/*Copyright (c) 2011 PerfectMedia SAC
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
+//============================================================================
+// Name        : PPTController.cpp
+// Author      : Marco Ordonez
+// Version     : 1.0
+// Copyright   : PerfectMedia SAC 2011
+// Description : Header file of PPTController.cpp
+//============================================================================
 
 #ifndef PPTCONTROLLER_HPP_
 #define PPTCONTROLLER_HPP_
@@ -19,10 +40,15 @@
 
 #include <com/sun/star/beans/XPropertySet.hpp>
 
+#include <com/sun/star/presentation/XPresentationSupplier.hpp>
+#include <com/sun/star/presentation/XPresentation2.hpp>
+#include <com/sun/star/presentation/XSlideShowController.hpp>
+
 #include <com/sun/star/drawing/XDrawPagesSupplier.hpp>
 #include <com/sun/star/drawing/XDrawPage.hpp>
 #include <com/sun/star/drawing/XDrawPages.hpp>
 #include <com/sun/star/drawing/XDrawView.hpp>
+
 
 #include <com/sun/star/document/XDocumentInfoSupplier.hpp>
 #include <com/sun/star/document/XDocumentInfo.hpp>
@@ -52,6 +78,7 @@ using namespace com::sun::star::frame;
 using namespace com::sun::star::registry;
 
 using namespace com::sun::star::drawing;
+using namespace com::sun::star::presentation;
 
 class PPTController
 {
@@ -62,6 +89,7 @@ public:
 	void connect();
 	void openDoc();
 	void accessDoc();
+	void toggleFullScreen();
 	void moveToNext();
 	void moveToPrev();
 	void disconnect();
@@ -70,7 +98,6 @@ public:
 	void setCurrentPage(int page);
 
 private:
-
 
 	string getCurrentDir();
 };

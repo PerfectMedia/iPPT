@@ -156,10 +156,26 @@ src/iPPT.d src/iPPT.o: ../src/iPPT.cpp ../src/net/LocalIpAddress.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/PropertyChangeEvent.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/XPropertyChangeListener.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/XPropertyChangeListener.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPagesSupplier.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPagesSupplier.hdl \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPages.hpp \
- /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPages.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XPresentationSupplier.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XPresentationSupplier.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XPresentation.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XPresentation.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XPresentation2.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XPresentation2.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShowController.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShowController.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShowListener.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShowListener.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/animations/XAnimationListener.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/animations/XAnimationListener.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/animations/XAnimationNode.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/animations/XAnimationNode.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XChild.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/NoSupportException.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/NamedValue.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XChild.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/NoSupportException.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/NamedValue.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPage.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPage.hdl \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XShapes.hdl \
@@ -172,6 +188,112 @@ src/iPPT.d src/iPPT.o: ../src/iPPT.cpp ../src/net/LocalIpAddress.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XShapeDescriptor.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/awt/Size.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/awt/Point.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShow.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShow.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XShapeEventListener.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XShapeEventListener.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPagesSupplier.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPagesSupplier.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPages.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPages.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShowView.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShowView.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/AffineMatrix2D.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/util/XModifyListener.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/util/XModifyListener.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XSpriteCanvas.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XSpriteCanvas.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/VolatileContentDestroyedException.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBitmapCanvas.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/ViewState.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCanvas.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/Texture.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/StrokeAttributes.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealBezierSegment2D.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealPoint2D.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/Matrix2D.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/RenderState.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/StringContext.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FontRequest.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/Locale.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FontInfo.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/util/TriState.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/Panose.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealRectangle2D.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealSize2D.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCustomSprite.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCustomSprite.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XSprite.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XSprite.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XPolyPolygon2D.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XPolyPolygon2D.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FillRule.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FillRule.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealPoint2D.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/AffineMatrix2D.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/ViewState.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/RenderState.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCanvas.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/VolatileContentDestroyedException.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCanvasFont.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCanvasFont.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FontMetrics.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FontMetrics.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/StringContext.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FontRequest.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/Locale.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FontInfo.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/util/TriState.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/Panose.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XTextLayout.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XTextLayout.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/Caret.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/TextHit.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/Caret.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/TextHit.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealRectangle2D.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/Texture.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/StrokeAttributes.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XParametricPolyPolygon2D.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XParametricPolyPolygon2D.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XColorSpace.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XColorSpace.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/ARGBColor.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/ColorComponent.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/RGBColor.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/ARGBColor.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/ColorComponent.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/RGBColor.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBitmap.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBitmap.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/IntegerSize2D.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/IntegerSize2D.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealSize2D.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealBezierSegment2D.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/XMapping2D.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/XMapping2D.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/Matrix2D.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XGraphicDevice.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XGraphicDevice.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBezierPolyPolygon2D.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBezierPolyPolygon2D.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XVolatileBitmap.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XVolatileBitmap.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XLinePolyPolygon2D.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XLinePolyPolygon2D.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/XMultiServiceFactory.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/XMultiServiceFactory.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBufferController.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBufferController.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCachedPrimitive.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCachedPrimitive.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XAnimatedSprite.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XAnimatedSprite.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBitmapCanvas.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XAnimation.hpp \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XAnimation.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/AnimationAttributes.hdl \
+ /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/AnimationAttributes.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawView.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawView.hdl \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/document/XDocumentInfoSupplier.hpp \
@@ -517,13 +639,45 @@ src/iPPT.d src/iPPT.o: ../src/iPPT.cpp ../src/net/LocalIpAddress.hpp \
 
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/XPropertyChangeListener.hdl:
 
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPagesSupplier.hpp:
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XPresentationSupplier.hpp:
 
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPagesSupplier.hdl:
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XPresentationSupplier.hdl:
 
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPages.hpp:
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XPresentation.hpp:
 
-/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPages.hdl:
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XPresentation.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XPresentation2.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XPresentation2.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShowController.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShowController.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShowListener.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShowListener.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/animations/XAnimationListener.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/animations/XAnimationListener.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/animations/XAnimationNode.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/animations/XAnimationNode.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XChild.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/NoSupportException.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/NamedValue.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/container/XChild.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/NoSupportException.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/beans/NamedValue.hpp:
 
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPage.hpp:
 
@@ -548,6 +702,218 @@ src/iPPT.d src/iPPT.o: ../src/iPPT.cpp ../src/net/LocalIpAddress.hpp \
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/awt/Size.hpp:
 
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/awt/Point.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShow.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShow.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XShapeEventListener.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XShapeEventListener.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPagesSupplier.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPagesSupplier.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPages.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawPages.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShowView.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/presentation/XSlideShowView.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/AffineMatrix2D.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/util/XModifyListener.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/util/XModifyListener.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XSpriteCanvas.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XSpriteCanvas.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/VolatileContentDestroyedException.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBitmapCanvas.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/ViewState.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCanvas.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/Texture.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/StrokeAttributes.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealBezierSegment2D.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealPoint2D.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/Matrix2D.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/RenderState.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/StringContext.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FontRequest.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/Locale.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FontInfo.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/util/TriState.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/Panose.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealRectangle2D.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealSize2D.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCustomSprite.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCustomSprite.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XSprite.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XSprite.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XPolyPolygon2D.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XPolyPolygon2D.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FillRule.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FillRule.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealPoint2D.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/AffineMatrix2D.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/ViewState.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/RenderState.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCanvas.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/VolatileContentDestroyedException.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCanvasFont.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCanvasFont.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FontMetrics.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FontMetrics.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/StringContext.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FontRequest.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/Locale.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/FontInfo.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/util/TriState.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/Panose.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XTextLayout.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XTextLayout.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/Caret.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/TextHit.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/Caret.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/TextHit.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealRectangle2D.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/Texture.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/StrokeAttributes.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XParametricPolyPolygon2D.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XParametricPolyPolygon2D.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XColorSpace.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XColorSpace.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/ARGBColor.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/ColorComponent.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/RGBColor.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/ARGBColor.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/ColorComponent.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/RGBColor.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBitmap.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBitmap.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/IntegerSize2D.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/IntegerSize2D.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealSize2D.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/RealBezierSegment2D.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/XMapping2D.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/XMapping2D.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/geometry/Matrix2D.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XGraphicDevice.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XGraphicDevice.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBezierPolyPolygon2D.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBezierPolyPolygon2D.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XVolatileBitmap.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XVolatileBitmap.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XLinePolyPolygon2D.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XLinePolyPolygon2D.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/XMultiServiceFactory.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/lang/XMultiServiceFactory.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBufferController.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBufferController.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCachedPrimitive.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XCachedPrimitive.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XAnimatedSprite.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XAnimatedSprite.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XBitmapCanvas.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XAnimation.hpp:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/XAnimation.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/AnimationAttributes.hdl:
+
+/home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/rendering/AnimationAttributes.hpp:
 
 /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/drawing/XDrawView.hpp:
 

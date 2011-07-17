@@ -21,8 +21,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 //============================================================================
 // Name        : iPPT.cpp
 // Author      : Marco Ordonez
-// Version     :
-// Copyright   : 
+// Version     : 1.0
+// Copyright   : PerfectMedia SAC 2011
 // Description : Power Point socket program to listen Iphone requests
 //============================================================================
 
@@ -101,7 +101,7 @@ int main(int argc, char *argv[])
 	cout << "Ip: " << ip_address->getIp() << endl;
 	cout << "Puerto : 9192" << endl;
 
-	if ((status = getaddrinfo(ip_address->getIp().c_str(), "9192", &hints, &servinfo)) != 0)
+	if ((status = getaddrinfo("192.168.1.36"/*ip_address->getIp().c_str()*/, "9192", &hints, &servinfo)) != 0)
 	{
 		fprintf(stderr, "getaddrinfo: %s\n", gai_strerror(status));
 		return 2;
@@ -184,6 +184,11 @@ int main(int argc, char *argv[])
 			{
 				cout << "ejecuta prev command : " << endl;
 				loffice_pptcontroller->moveToPrev();
+			}
+			if (command.compare("fullscreen") == 0 )
+			{
+				cout << "ejecuta fullscreen command : " << endl;
+				loffice_pptcontroller->toggleFullScreen();
 			}
 		}
 
