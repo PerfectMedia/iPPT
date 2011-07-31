@@ -37,13 +37,21 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 using namespace std;
 
+struct ip_info
+{
+	string ip_address;
+	string broadcast_address;
+};
+
+
 class LocalIpAddress
 {
 public:
 	LocalIpAddress();
 	virtual ~LocalIpAddress();
-	string getIp();
+	vector<ip_info> getAddresses();
 private:
+	string getIpDataFromLine(string line,string ip_string_to_find);
 	bool isInternal(string ip);
 };
 

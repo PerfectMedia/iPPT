@@ -27,26 +27,24 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 //============================================================================
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <vector>
 #include <iostream>
-#include <time.h>
-#include <unistd.h>
-#include <errno.h>
 #include <string.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <netdb.h>
-#include <arpa/inet.h>
-#include <sys/wait.h>
-#include <signal.h>
+
 #include "net/LocalIpAddress.hpp"
+#include "net/Server.hpp"
+#include "net/Broadcaster.hpp"
+
 #include "loffice/doccontrol/ppt/PPTController.hpp"
+
+
 using namespace std;
 
 
-#define BACKLOG 10
+#define PORT_TO_BROADCAST 9192
+/*#define BACKLOG 10
 #define MAXDATASIZE 100
+#define PORT_TO_BROADCAST 9192
 
 void sigchld_handler(int s)
 {
@@ -60,11 +58,38 @@ void *get_in_addr(struct sockaddr *sa)
     }
 
     return &(((struct sockaddr_in6*)sa)->sin6_addr);
-}
-
+}*/
 
 int main(int argc, char *argv[])
 {
+	LocalIpAddress * ip_address = new LocalIpAddress();
+	vector<ip_info> ips = ip_address->getAddresses();
+
+	//Broadcaster * broadcaster = new Broadcaster();
+
+
+
+	for (unsigned int i = 0 ;i<ips.size();i++)
+	{
+		struct ip_info ip_data = ips.at(i);
+		//cout << "Broadcasting a la ip : " << ip_data.broadcast_address << " en el puerto :" << PORT_TO_BROADCAST << endl;
+
+		//cout << ip_data.broadcast_address << endl;
+
+
+		//broadcaster->startBroadcast(ip_data.broadcast_address,PORT_TO_BROADCAST,ip_data.ip_address);
+
+
+	}
+	Server * server = new Server();
+	server->listenOn("192.168.1.34","9192");
+
+
+
+	cout << "ok  final "<< endl;
+
+	return 0;
+
 
 	system("soffice -invisible \"-accept=socket,host=localhost,port=8100;urp;StarOffice.ServiceManager\"");
 
@@ -80,9 +105,9 @@ int main(int argc, char *argv[])
 
 
 
-	LocalIpAddress * ip_address;
+	//LocalIpAddress * ip_address;
 
-	struct sockaddr_storage their_addr;
+	/*struct sockaddr_storage their_addr;
 	struct addrinfo hints, *servinfo;
 	int status;
 	int sockfd, new_fd;
@@ -98,10 +123,10 @@ int main(int argc, char *argv[])
 	hints.ai_flags = AI_PASSIVE;
 
 	cout << "Escuchando conexiones en :  " << endl;
-	cout << "Ip: " << ip_address->getIp() << endl;
+	//cout << "Ip: " << ip_address->getInternalIp() << endl;
 	cout << "Puerto : 9192" << endl;
 
-	if ((status = getaddrinfo("192.168.1.36"/*ip_address->getIp().c_str()*/, "9192", &hints, &servinfo)) != 0)
+	if ((status = getaddrinfo("192.168.1.36", "9192", &hints, &servinfo)) != 0)
 	{
 		fprintf(stderr, "getaddrinfo: %s\n", gai_strerror(status));
 		return 2;
@@ -193,7 +218,7 @@ int main(int argc, char *argv[])
 		}
 
 
-	}
+	}*/
 
 	return 0;
 }

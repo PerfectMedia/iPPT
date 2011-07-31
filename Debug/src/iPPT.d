@@ -1,4 +1,5 @@
 src/iPPT.d src/iPPT.o: ../src/iPPT.cpp ../src/net/LocalIpAddress.hpp \
+ ../src/net/Server.hpp ../src/net/Broadcaster.hpp \
  ../src/loffice/doccontrol/ppt/PPTController.hpp \
  /usr/lib/libreoffice/basis3.3/sdk/include/cppuhelper/bootstrap.hxx \
  /usr/lib/libreoffice/basis3.3/sdk/include/sal/config.h \
@@ -324,6 +325,10 @@ src/iPPT.d src/iPPT.o: ../src/iPPT.cpp ../src/net/LocalIpAddress.hpp \
  /home/mordonez/libreoffice3.3_sdk/mordonez-HP-Pavilion-dv6-Notebook-PC/include/com/sun/star/uno/XComponentContext.hdl
 
 ../src/net/LocalIpAddress.hpp:
+
+../src/net/Server.hpp:
+
+../src/net/Broadcaster.hpp:
 
 ../src/loffice/doccontrol/ppt/PPTController.hpp:
 
